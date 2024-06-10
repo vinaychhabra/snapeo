@@ -1,7 +1,7 @@
 {
-  "name": "alime-photography-html-template",
+  "name": "snapeo-wedding",
   "version": "1.0.0",
-  "description": "Alime - Photography HTML Template",
+  "description": "Snapeo - Capturing moment",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
@@ -9,8 +9,10 @@
   "author": "colorlib",
   "license": "CC-BY-3.0",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1"
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.4"
   },
   "dependencies": {
     "bootstrap": "^4.2.1",
