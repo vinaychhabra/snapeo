@@ -3,7 +3,7 @@
 .section-heading {
     position: relative;
     z-index: 1;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     h2 {
         font-size: 36px;
@@ -13,7 +13,7 @@
         line-height: 1.2;
 
         @media #{$breakpoint-xs} {
-            font-size: 24px;
+            font-size: 18px;
         }
     }
 
