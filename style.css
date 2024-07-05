@@ -403,6 +403,9 @@ input:required {
   box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
   z-index: 15962536; }
   @media only screen and (max-width: 767px) {
+    .instagram-handles a {
+      font-size: 14px !important;
+    }
     #scrollUp {
       right: 20px;
       bottom: 20px; } }
@@ -426,7 +429,7 @@ input:required {
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
     display: inline-flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
 }
 .instagram-handles a:hover {
     color: #fff;
