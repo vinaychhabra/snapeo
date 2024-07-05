@@ -433,7 +433,7 @@ input:required {
     background-color: #ffa900;
     transform: scale(1.1);
 }
-.instagram-handles a:hover .instagram-icon {
+.instagram-handles a .instagram-icon {
   background-color: #e4405f;
 }
 .instagram-icon {
