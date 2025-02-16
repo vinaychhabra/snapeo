@@ -309,11 +309,36 @@
 </div>
     <!-- Map Area Start -->
     <div class="map-area section-padding-0-80">
-        <div class="container">
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d111725.38884158974!2d79.36709860514885!3d28.945312104947778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39a07f00a6d68ea7%3A0x1039fc8b03e7958f!2sWCWX%2B4RJ%2C%20Shimla%20Pistor%2C%20Kichha%20Rd%2C%20Rudrapur%2C%20Uttarakhand%20263153!3m2!1d28.945337199999997!2d79.4495!5e0!3m2!1sen!2sin!4v1718011646443!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div id="map-container" style="width: 100%; height: 450px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+            <p>Loading map...</p>
         </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let mapLoaded = false;
+                const mapContainer = document.getElementById("map-container");
+        
+                function loadMap() {
+                    if (!mapLoaded) {
+                        mapContainer.innerHTML = `<iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d111725.38884158974!2d79.36709860514885!3d28.945312104947778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39a07f00a6d68ea7%3A0x1039fc8b03e7958f!2sWCWX%2B4RJ%2C%20Shimla%20Pistor%2C%20Kichha%20Rd%2C%20Rudrapur%2C%20Uttarakhand%20263153!3m2!1d28.945337199999997!2d79.4495!5e0!3m2!1sen!2sin!4v1718011646443!5m2!1sen!2sin" 
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
+                        mapLoaded = true;
+                    }
+                }
+        
+                function handleScroll() {
+                    const rect = mapContainer.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        loadMap();
+                        window.removeEventListener("scroll", handleScroll);
+                    }
+                }
+        
+                window.addEventListener("scroll", handleScroll);
+            });
+        </script>
+        
     </div>
     <!-- Map Area End -->
 
@@ -342,7 +367,7 @@
         <div class="instragram-feed-area owl-carousel">
             <!-- Single Instagram Item -->
             <div class="single-instagram-item">
-                <img src="img/ig-img/1.jpg" alt="">
+                <img src="https://snapeo-241064855.imgix.net/img/ig-img/1.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/snapeo_studios" target="_blank">
                         <i class="ti-instagram" aria-hidden="true"></i>
@@ -352,7 +377,7 @@
             </div>
             <!-- Single Instagram Item -->
             <div class="single-instagram-item">
-                <img src="img/ig-img/2.jpg" alt="">
+                <img src="https://snapeo-241064855.imgix.net/img/ig-img/2.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/snapeo_studios" target="_blank">
                         <i class="ti-instagram" aria-hidden="true"></i>
@@ -362,7 +387,7 @@
             </div>
             <!-- Single Instagram Item -->
             <div class="single-instagram-item">
-                <img src="img/ig-img/3.jpg" alt="">
+                <img src="https://snapeo-241064855.imgix.net/img/ig-img/3.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/snapeo_studios" target="_blank">
                         <i class="ti-instagram" aria-hidden="true"></i>
@@ -372,7 +397,7 @@
             </div>
             <!-- Single Instagram Item -->
             <div class="single-instagram-item">
-                <img src="img/ig-img/4.jpg" alt="">
+                <img src="https://snapeo-241064855.imgix.net/img/ig-img/4.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/snapeo_studios" target="_blank">
                         <i class="ti-instagram" aria-hidden="true"></i>
@@ -382,7 +407,7 @@
             </div>
             <!-- Single Instagram Item -->
             <div class="single-instagram-item">
-                <img src="img/ig-img/5.jpg" alt="">
+                <img src="https://snapeo-241064855.imgix.net/img/ig-img/5.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/snapeo_studios" target="_blank">
                         <i class="ti-instagram" aria-hidden="true"></i>
@@ -392,7 +417,7 @@
             </div>
             <!-- Single Instagram Item -->
             <div class="single-instagram-item">
-                <img src="img/ig-img/6.jpg" alt="">
+                <img src="https://snapeo-241064855.imgix.net/img/ig-img/6.jpg" alt="">
                 <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
                     <a href="https://www.instagram.com/snapeo_studios" target="_blank">
                         <i class="ti-instagram" aria-hidden="true"></i>
