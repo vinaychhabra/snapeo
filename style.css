@@ -1868,3 +1868,30 @@ input:required {
   }
 }
 
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  transform: translateY(-2px);
+}
+
+.whatsapp-contact {
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-contact:hover {
+  color: #25D366;
+}
+
+.fa-whatsapp {
+  font-size: 1.2em;
+}
