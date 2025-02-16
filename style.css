@@ -1895,3 +1895,24 @@ input:required {
 .fa-whatsapp {
   font-size: 1.2em;
 }
+.logo-img-d {
+  width: 150px; /* Adjust to your logo's actual width */
+  height: 50px;  /* Adjust to your logo's actual height */
+  object-fit: contain;
+  -webkit-object-fit: contain; /* For Safari */
+  max-width: 100%;
+  aspect-ratio: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-img-d {
+      width: 120px; /* Smaller size for mobile */
+      height: 40px;
+  }
+}
+
+/* Ensure the container doesn't cause stretching */
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+}
