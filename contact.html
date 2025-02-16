@@ -15,7 +15,74 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        .snapeo-error-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .snapeo-error-content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .snapeo-error-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .snapeo-error-title {
+            color: #ff4444;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .snapeo-error-message {
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .snapeo-error-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .snapeo-error-btn.primary {
+            background: #ffa900;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .snapeo-error-btn.primary:hover {
+            background: #ff7730;
+        }
+        </style>
 </head>
 
 <body>
@@ -109,37 +176,114 @@
     </section>
     <!-- Breadcrumb Area End -->
 
-    <!-- Contact Area Start -->
-    <div class="contact-area section-padding-80-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h2 class="contact-title mb-30">Let’s Work <br>Together</h2>
+<!-- Contact Area Start -->
+<div class="contact-area section-padding-80-50" >
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Contact Info -->
+            <div class="col-12 col-lg-5">
+                <a>
+                <div class="snapeo-contact-info mb-80">
+                    <h2>Let's Create<br>Something Together</h2>
+                    
+                    <div class="snapeo-info-card">
+                        <div class="snapeo-icon-box">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="snapeo-info-content">
+                            <h5>Email Us</h5>
+                            <a href="mailto:snapeostudios@gmail.com">snapeostudios@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="snapeo-info-card">
+                        <div class="snapeo-icon-box">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="snapeo-info-content">
+                            <h5>Call Us</h5>
+                            <a href="tel:+917017889843">+91 7017889843</a>
+                        </div>
+                    </div>
+
+                    <div class="snapeo-info-card">
+                        <div class="snapeo-icon-box">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="snapeo-info-content">
+                            <h5>Visit Us</h5>
+                            <p>Snapeo Studios, Shimla pistore,<br>Rudrapur, Uttarakhand-263148</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Email</p>
-                        <a href="mailto:snapeostudios@gmail.com">snapeostudios@gmail.com</a>
-                    </div>
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Call Us</p>
-                        <a href="#">+91-7017889843</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <!-- Contact Info -->
-                    <div class="contact-info mb-30">
-                        <p>Visit Us</p>
-                        <a href="#">Snapeo Studios, Shimla pistore, Rudrapur, Uttarakhand-263148</a>
-                    </div>
+                
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-12 col-lg-7">
+                <div class="snapeo-form-card" id="contact-form">
+                    <h3>Get in Touch</h3>
+                    <p class="mb-4">We'd love to hear from you! Fill out the form below and we'll get back to you.</p>
+                    
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="snapeo-form-group snapeo-floating-label">
+                                    <input type="text" class="snapeo-form-control" id="name" name="name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="snapeo-form-group snapeo-floating-label">
+                                    <input type="email" class="snapeo-form-control" id="email" name="email" required>
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="snapeo-form-group snapeo-floating-label">
+                            <input type="text" class="snapeo-form-control" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+
+                        <div class="snapeo-form-group snapeo-floating-label">
+                            <textarea class="snapeo-form-control textarea" id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+
+                        <button type="submit" class="snapeo-submit-btn">
+                            <span>Send Message</span>
+                            <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact Area End -->
+</div>
 
+<!-- Contact Area End -->
+<!-- Error Modal -->
+<div class="snapeo-error-modal">
+    <div class="snapeo-error-content">
+        <button class="snapeo-error-close">&times;</button>
+        <div class="snapeo-error-title">
+            <i class="fa fa-exclamation-circle"></i> Email Service Unavailable
+        </div>
+        <div class="snapeo-error-message">
+            We apologize, but our email service is currently unavailable. Please feel free to:
+            <br><br>
+            1. Email us directly at: snapeostudios@gmail.com
+            <br>
+            2. Call us at: +91 7017889843
+        </div>
+        <div class="snapeo-error-buttons">
+            <a href="mailto:snapeostudios@gmail.com" class="snapeo-error-btn primary">
+                Send Email
+            </a>
+        </div>
+    </div>
+</div>
     <!-- Map Area Start -->
     <div class="map-area section-padding-0-80">
         <div class="container">
@@ -162,8 +306,8 @@
                                 <span class="instagram-icon"></span> snapeo_studios
                             </a>
                            
-                            <a href="https://www.instagram.com/snapeo_graphics" target="_blank" rel="noopener noreferrer">
-                                <span class="instagram-icon"></span> snapeo_graphics
+                            <a href="https://www.instagram.com/snapeo_invites" target="_blank" rel="noopener noreferrer">
+                                <span class="instagram-icon"></span> snapeo_invites
                             </a>
                         </p>
                     </div>
@@ -250,7 +394,32 @@
     <script src="js/alime.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
-
+    <script>
+        $(document).ready(function() {
+            // Form submission handling
+            $('form').on('submit', function(e) {
+                e.preventDefault();
+                $('.snapeo-error-modal').css('display', 'flex');
+            });
+        
+            // Close modal when clicking the close button
+            $('.snapeo-error-close').on('click', function() {
+                $('.snapeo-error-modal').hide();
+            });
+        
+            // Close modal when clicking outside
+            $('.snapeo-error-modal').on('click', function(e) {
+                if (e.target === this) {
+                    $(this).hide();
+                }
+            });
+        
+            // Prevent modal content clicks from closing the modal
+            $('.snapeo-error-content').on('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+        </script>
 </body>
 
 </html>

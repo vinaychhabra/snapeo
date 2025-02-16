@@ -1480,7 +1480,7 @@ input:required {
       -o-transition-duration: 500ms;
       transition-duration: 500ms;
       width: 100%;
-      border-radius: 50%; }
+      border-radius: 10%; }
   .team-content-area h5 {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
@@ -1680,3 +1680,191 @@ input:required {
     border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
+/* Modern Contact Styles */
+.snapeo-contact-info {
+  padding-right: 50px;
+}
+
+.snapeo-contact-info h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  background: linear-gradient(45deg, #333, #666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.snapeo-info-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.snapeo-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.snapeo-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ffa900, #ff7730);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.snapeo-icon-box i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.snapeo-info-content h5 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.snapeo-info-content a,
+.snapeo-info-content p {
+  color: #666;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.snapeo-info-content a:hover {
+  color: #ffa900;
+}
+
+.snapeo-form-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.snapeo-form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.snapeo-floating-label {
+  position: relative;
+}
+
+.snapeo-floating-label label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  color: #999;
+}
+
+.snapeo-floating-label textarea ~ label {
+  top: 25px;
+}
+
+.snapeo-form-control {
+  height: 55px;
+  padding: 20px 15px 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.snapeo-form-control.textarea {
+  height: auto;
+  padding-top: 25px;
+}
+
+.snapeo-form-control:focus,
+.snapeo-form-control:not(:placeholder-shown) {
+  border-color: #ffa900;
+  box-shadow: 0 5px 15px rgba(255, 169, 0, 0.1);
+}
+
+.snapeo-form-control:focus ~ label,
+.snapeo-form-control:not(:placeholder-shown) ~ label {
+  top: 8px;
+  font-size: 12px;
+  color: #ffa900;
+}
+
+.snapeo-submit-btn {
+  background: linear-gradient(45deg, #ffa900, #ff7730);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.snapeo-submit-btn i {
+  margin-left: 10px;
+}
+
+.snapeo-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(255, 169, 0, 0.3);
+}
+.our-team-area .container .row {
+  justify-content: center;
+}
+/* Only mobile adjustments - keeping desktop UI intact */
+@media screen and (max-width: 768px) {
+    .snapeo-contact-info {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .snapeo-contact-info h2 {
+        font-size: 2.2rem;
+    }
+
+    .snapeo-form-card {
+        padding: 25px;
+        margin: 15px;
+    }
+
+    .snapeo-submit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .snapeo-contact-info h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.row.align-items-center {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snapeo-contact-info,
+.snapeo-form-card {
+  height: 100%;
+  margin: 20px 0;
+}
+
+@media (max-width: 991px) {
+  .snapeo-contact-info {
+      margin-bottom: 40px;
+  }
+}
+
