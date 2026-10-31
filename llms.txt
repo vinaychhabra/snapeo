@@ -1,0 +1,26 @@
+# Snapeo Studios
+
+> Snapeo Studios is a wedding photography and wedding film studio based in Rudrapur, Uttarakhand, India. One small team shoots photography and film together, and the studio covers weddings across India and abroad.
+
+Key facts:
+- Services: wedding photography, cinematic wedding films, pre-wedding shoots, hand-bound albums, destination weddings
+- Location: Rudrapur, Uttarakhand, India
+- Service area: Uttarakhand, Pan India and abroad
+- Booking: WhatsApp +91 70178 89843, calls +91 95578 82097 / +91 98373 10900
+- Email: snapeostudios@gmail.com
+- Pricing: every wedding is quoted individually based on days, events and deliverables
+
+## Pages
+- [Home](https://v2.snapeo.in/): services, booking steps, FAQs
+- [Portfolio](https://v2.snapeo.in/#portfolio): wedding, pre-wedding and editorial photos
+- [Films](https://v2.snapeo.in/#films): wedding films
+- [Experience](https://v2.snapeo.in/#experience): what is included
+- [About](https://v2.snapeo.in/#about): the studio and how it works
+- [Enquire](https://v2.snapeo.in/#contact): check dates and request a quote
+
+## Social
+- [Instagram @snapeo_studios](https://www.instagram.com/snapeo_studios)
+- [Instagram @snapeo_invites](https://www.instagram.com/snapeo_invites)
+
+## Optional
+- [Full details](https://v2.snapeo.in/llms-full.txt)
