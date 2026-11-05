@@ -11,16 +11,16 @@ Key facts:
 - Pricing: every wedding is quoted individually based on days, events and deliverables
 
 ## Pages
-- [Home](https://v2.snapeo.in/): services, booking steps, FAQs
-- [Portfolio](https://v2.snapeo.in/#portfolio): wedding, pre-wedding and editorial photos
-- [Films](https://v2.snapeo.in/#films): wedding films
-- [Experience](https://v2.snapeo.in/#experience): what is included
-- [About](https://v2.snapeo.in/#about): the studio and how it works
-- [Enquire](https://v2.snapeo.in/#contact): check dates and request a quote
+- [Home](https://www.snapeo.in/): services, booking steps, FAQs
+- [Portfolio](https://www.snapeo.in/portfolio/): wedding, pre-wedding and editorial photos
+- [Films](https://www.snapeo.in/films/): wedding films
+- [Experience](https://www.snapeo.in/experience/): what is included
+- [About](https://www.snapeo.in/about/): the studio and how it works
+- [Enquire](https://www.snapeo.in/contact/): check dates and request a quote
 
 ## Social
 - [Instagram @snapeo_studios](https://www.instagram.com/snapeo_studios)
 - [Instagram @snapeo_invites](https://www.instagram.com/snapeo_invites)
 
 ## Optional
-- [Full details](https://v2.snapeo.in/llms-full.txt)
+- [Full details](https://www.snapeo.in/llms-full.txt)

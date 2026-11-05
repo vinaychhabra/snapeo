@@ -1,0 +1,8 @@
+{
+  "name": "snapeo-site",
+  "private": true,
+  "version": "3.0.0",
+  "description": "Snapeo Studios website (static site for GitHub Pages)",
+  "scripts": { "build": "python3 build.py" },
+  "devDependencies": { "csso": "^5.0.5", "terser": "^5.31.0" }
+}
